@@ -1,1 +1,3 @@
-# password-gen-py
+A simple password generator in python.
+
+If you find any bugs dm me on discord. `Inferno#2737`
