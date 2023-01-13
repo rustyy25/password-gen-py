@@ -14,5 +14,5 @@ for i in range(length):
     password = password + random.choice(chars);
    
 print('Generating your password...');
-time.sleep(5);
+time.sleep(3);
 print(f'Your new password is: {password}');
