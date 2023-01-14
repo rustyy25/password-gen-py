@@ -10,9 +10,13 @@ length = int(input("Provide a length: "));
 chars = letters + digits + symbols
 password = "";
 
+def Wait():
+    for _ in range(3):
+        print("Generating your password...")
+        time.sleep(1)
+
 for i in range(length):
     password = password + random.choice(chars);
-   
-print('Generating your password...');
-time.sleep(3);
-print(f'Your new password is: {password}');
+
+Wait()
+print(f'Your new password is: {password}')
