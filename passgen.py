@@ -12,11 +12,11 @@ password = "";
 
 def Wait():
     for _ in range(3):
-        print("Generating your password...")
-        time.sleep(1)
+        print("Generating your password...");
+        time.sleep(1);
 
 for i in range(length):
     password = password + random.choice(chars);
 
 Wait()
-print(f'Your new password is: {password}')
+print(f'Your new password is: {password}');
