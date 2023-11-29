@@ -10,13 +10,13 @@ length = int(input("Provide a length: "));
 chars = letters + digits + symbols
 password = "";
 
-def Wait():
+def effect():
     for _ in range(3):
         print("Generating your password...");
         time.sleep(1);
 
 for i in range(length):
-    password = password + random.choice(chars);
+    password += random.choice(chars);
 
-Wait()
+effect()
 print(f'Your new password is: {password}');
