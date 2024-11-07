@@ -1,22 +1,18 @@
 import random
-import time
 import string
 
 letters = string.ascii_letters
 digits = string.digits
 symbols = string.punctuation
 
-length = int(input("Provide a length: "));
+length = int(input("Provide a length: "))
+amount = int(input("Enter the amount of password to generate: "))
 chars = letters + digits + symbols
-password = "";
 
-def effect():
-    for _ in range(3):
-        print("Generating your password...");
-        time.sleep(1);
+for i in range(amount):
+    pwd = ""
 
-for i in range(length):
-    password += random.choice(chars);
-
-effect()
-print(f'Your new password is: {password}');
+    for j in range(length):
+        pwd += random.choice(chars)
+        
+    print(f'Your new pwd is: {pwd}')
